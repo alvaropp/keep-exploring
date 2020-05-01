@@ -97,11 +97,7 @@ m = folium.Map(
 all_pos, break_points = load_all_routes()
 colours = compute_colours(all_pos)
 
-print(break_points)
-
 for idx in range(len(break_points) - 1):
-    print(idx)
-    print(all_pos[break_points[idx] : break_points[idx + 1]])
     folium.ColorLine(
         all_pos[break_points[idx] : break_points[idx + 1]],
         colors=colours,
