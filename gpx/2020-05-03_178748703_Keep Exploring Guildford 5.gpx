@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gpx version="1.1" creator="https://www.komoot.de" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Keep Exploring Guildford 5- 2</name>
+    <author>
+      <link href="https://www.komoot.de">
+        <text>komoot</text>
+        <type>text/html</type>
+      </link>
+    </author>
+  </metadata>
+  <trk>
+    <name>Keep Exploring Guildford 5- 2</name>
+    <trkseg>
+      <trkpt lat="51.234853" lon="-0.577179">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:15:10.736Z</time>
+      </trkpt>
+      <trkpt lat="51.234861" lon="-0.577143">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:15:13.171Z</time>
+      </trkpt>
+      <trkpt lat="51.234870" lon="-0.577088">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:15:16.780Z</time>
+      </trkpt>
+      <trkpt lat="51.234873" lon="-0.577066">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:15:18.263Z</time>
+      </trkpt>
+      <trkpt lat="51.234960" lon="-0.576528">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:15:55.303Z</time>
+      </trkpt>
+      <trkpt lat="51.234981" lon="-0.576363">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:06.914Z</time>
+      </trkpt>
+      <trkpt lat="51.234989" lon="-0.576316">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:10.034Z</time>
+      </trkpt>
+      <trkpt lat="51.234997" lon="-0.576274">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:12.936Z</time>
+      </trkpt>
+      <trkpt lat="51.235021" lon="-0.576195">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:18.890Z</time>
+      </trkpt>
+      <trkpt lat="51.235041" lon="-0.576086">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:26.133Z</time>
+      </trkpt>
+      <trkpt lat="51.235063" lon="-0.575969">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:33.881Z</time>
+      </trkpt>
+      <trkpt lat="51.235071" lon="-0.575914">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:37.855Z</time>
+      </trkpt>
+      <trkpt lat="51.235110" lon="-0.575968">
+        <ele>36.776053</ele>
+        <time>2020-05-03T08:16:43.472Z</time>
+      </trkpt>
+      <trkpt lat="51.235694" lon="-0.576230">
+        <ele>37.593201</ele>
+        <time>2020-05-03T08:17:47.341Z</time>
+      </trkpt>
+      <trkpt lat="51.235825" lon="-0.576271">
+        <ele>37.780704</ele>
+        <time>2020-05-03T08:18:01.917Z</time>
+      </trkpt>
+      <trkpt lat="51.235847" lon="-0.576277">
+        <ele>37.812052</ele>
+        <time>2020-05-03T08:18:04.251Z</time>
+      </trkpt>
+      <trkpt lat="51.236057" lon="-0.576397">
+        <ele>38.125330</ele>
+        <time>2020-05-03T08:18:27.841Z</time>
+      </trkpt>
+      <trkpt lat="51.236069" lon="-0.576400">
+        <ele>38.142390</ele>
+        <time>2020-05-03T08:18:29.225Z</time>
+      </trkpt>
+      <trkpt lat="51.236113" lon="-0.576411">
+        <ele>38.204945</ele>
+        <time>2020-05-03T08:18:34.098Z</time>
+      </trkpt>
+      <trkpt lat="51.236275" lon="-0.576641">
+        <ele>38.509397</ele>
+        <time>2020-05-03T08:18:56.917Z</time>
+      </trkpt>
+      <trkpt lat="51.236555" lon="-0.576957">
+        <ele>38.990962</ele>
+        <time>2020-05-03T08:19:33.003Z</time>
+      </trkpt>
+      <trkpt lat="51.236765" lon="-0.577055">
+        <ele>39.298262</ele>
+        <time>2020-05-03T08:19:55.535Z</time>
+      </trkpt>
+      <trkpt lat="51.236904" lon="-0.577082">
+        <ele>39.303195</ele>
+        <time>2020-05-03T08:20:09.741Z</time>
+      </trkpt>
+      <trkpt lat="51.236899" lon="-0.577161">
+        <ele>39.303471</ele>
+        <time>2020-05-03T08:20:14.810Z</time>
+      </trkpt>
+      <trkpt lat="51.236941" lon="-0.577164">
+        <ele>39.303705</ele>
+        <time>2020-05-03T08:20:19.543Z</time>
+      </trkpt>
+      <trkpt lat="51.237206" lon="-0.577145">
+        <ele>39.305178</ele>
+        <time>2020-05-03T08:20:46.164Z</time>
+      </trkpt>
+      <trkpt lat="51.237402" lon="-0.577075">
+        <ele>39.306293</ele>
+        <time>2020-05-03T08:21:06.388Z</time>
+      </trkpt>
+      <trkpt lat="51.237571" lon="-0.577014">
+        <ele>39.307255</ele>
+        <time>2020-05-03T08:21:23.992Z</time>
+      </trkpt>
+      <trkpt lat="51.238248" lon="-0.576357">
+        <ele>39.311653</ele>
+        <time>2020-05-03T08:22:43.513Z</time>
+      </trkpt>
+      <trkpt lat="51.238400" lon="-0.576210">
+        <ele>39.281771</ele>
+        <time>2020-05-03T08:23:01.345Z</time>
+      </trkpt>
+      <trkpt lat="51.238465" lon="-0.576153">
+        <ele>39.224078</ele>
+        <time>2020-05-03T08:23:09.010Z</time>
+      </trkpt>
+      <trkpt lat="51.238570" lon="-0.576051">
+        <ele>39.128461</ele>
+        <time>2020-05-03T08:23:21.684Z</time>
+      </trkpt>
+      <trkpt lat="51.238554" lon="-0.575930">
+        <ele>39.068220</ele>
+        <time>2020-05-03T08:23:29.534Z</time>
+      </trkpt>
+      <trkpt lat="51.238605" lon="-0.575886">
+        <ele>39.023121</ele>
+        <time>2020-05-03T08:23:35.439Z</time>
+      </trkpt>
+      <trkpt lat="51.238626" lon="-0.575758">
+        <ele>38.958665</ele>
+        <time>2020-05-03T08:23:43.996Z</time>
+      </trkpt>
+      <trkpt lat="51.238642" lon="-0.575707">
+        <ele>38.930878</ele>
+        <time>2020-05-03T08:23:47.686Z</time>
+      </trkpt>
+      <trkpt lat="51.238731" lon="-0.575694">
+        <ele>38.861343</ele>
+        <time>2020-05-03T08:23:57.002Z</time>
+      </trkpt>
+      <trkpt lat="51.238988" lon="-0.575758">
+        <ele>38.658971</ele>
+        <time>2020-05-03T08:24:23.516Z</time>
+      </trkpt>
+      <trkpt lat="51.239107" lon="-0.575694">
+        <ele>38.561277</ele>
+        <time>2020-05-03T08:24:36.619Z</time>
+      </trkpt>
+      <trkpt lat="51.239152" lon="-0.575651">
+        <ele>38.520478</ele>
+        <time>2020-05-03T08:24:41.972Z</time>
+      </trkpt>
+      <trkpt lat="51.239233" lon="-0.575485">
+        <ele>38.417960</ele>
+        <time>2020-05-03T08:24:55.475Z</time>
+      </trkpt>
+      <trkpt lat="51.239282" lon="-0.575243">
+        <ele>38.294068</ele>
+        <time>2020-05-03T08:25:11.967Z</time>
+      </trkpt>
+      <trkpt lat="51.239517" lon="-0.575318">
+        <ele>38.107615</ele>
+        <time>2020-05-03T08:25:36.247Z</time>
+      </trkpt>
+      <trkpt lat="51.239594" lon="-0.575498">
+        <ele>38.001423</ele>
+        <time>2020-05-03T08:25:50.251Z</time>
+      </trkpt>
+      <trkpt lat="51.239715" lon="-0.575635">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:26:05.341Z</time>
+      </trkpt>
+      <trkpt lat="51.239807" lon="-0.575740">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:26:16.697Z</time>
+      </trkpt>
+      <trkpt lat="51.239802" lon="-0.575800">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:26:20.566Z</time>
+      </trkpt>
+      <trkpt lat="51.239798" lon="-0.575867">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:26:24.864Z</time>
+      </trkpt>
+      <trkpt lat="51.240372" lon="-0.575981">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:27:23.082Z</time>
+      </trkpt>
+      <trkpt lat="51.240417" lon="-0.575407">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:27:59.633Z</time>
+      </trkpt>
+      <trkpt lat="51.240461" lon="-0.574844">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:28:35.415Z</time>
+      </trkpt>
+      <trkpt lat="51.240461" lon="-0.574839">
+        <ele>37.913005</ele>
+        <time>2020-05-03T08:28:35.783Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

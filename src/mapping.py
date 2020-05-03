@@ -10,6 +10,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from folium.plugins import HeatMap
 from scipy.linalg import norm
+from shapely.geometry import Point, Polygon
 
 
 def load_gpx(path):
@@ -23,6 +24,32 @@ def load_gpx(path):
         return points
 
 
+def compute_segments_in_borough(all_points, borough_polygon):
+    points_in_borough = [
+        True if borough_polygon.contains(Point(point)) else False
+        for point in all_points
+    ]
+
+    route_idxs = []
+    start_idx = 0
+    end_idx = 0
+    for idx, in_borough in enumerate(points_in_borough[1:]):
+        if in_borough:
+            if start_idx < 0:
+                start_idx = idx + 1
+                end_idx = idx + 1
+            else:
+                end_idx += 1
+        else:
+            if start_idx >= 0:
+                route_idxs.append([start_idx, end_idx + 1])
+            start_idx = -1
+    route_idxs.append([start_idx, end_idx + 1])
+
+    routes = [all_points[route_idx[0] : route_idx[1]] for route_idx in route_idxs]
+    return routes
+
+
 def generate_map(route_path, output_path):
     m = folium.Map(
         location=[51.2412, -0.5744],
@@ -32,7 +59,7 @@ def generate_map(route_path, output_path):
     )
 
     # Add Guildford Borough
-    folium.GeoJson(
+    borough_json = folium.GeoJson(
         "https://findthatpostcode.uk/areas/E07000209.geojson",
         name="geojson",
         style_function=lambda x: {
@@ -40,13 +67,20 @@ def generate_map(route_path, output_path):
             "color": "black",
             "weight": 3,
         },
-    ).add_to(m)
+    )
+    borough_json.add_to(m)
+
+    borough_polygon = Polygon(
+        np.array(borough_json.data["features"][0]["geometry"]["coordinates"][0])[:, ::-1]
+    )
 
     # Add each route
     all_routes = sorted(glob(join(route_path, "*.gpx")))
     for route in all_routes:
         points = load_gpx(route)
-        folium.PolyLine(points, color="black", weight=1).add_to(m)
+        segments = compute_segments_in_borough(points, borough_polygon)
+        for segment in segments:
+            folium.PolyLine(segment, color="black", weight=2).add_to(m)
 
     # Save and add heading to map
     m.save(join(output_path, "index.html"))
