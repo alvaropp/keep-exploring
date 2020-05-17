@@ -91,9 +91,6 @@ def update_html_style_and_title(path):
     with open(join(path, "index.html"), "r") as f:
         soup = BeautifulSoup(f, "html.parser")
 
-    new_div = soup.new_tag("div")
-    new_div.string = "Keep Exploring."
-
     new_style = soup.new_tag("style")
 
     new_style.string = (
