@@ -1,6 +1,6 @@
 ## Keep Exploring
 
-!(example)[https://user-images.githubusercontent.com/4785303/82208753-fb66ee80-9903-11ea-8800-af0aa7a3c120.gif]
+![example](https://user-images.githubusercontent.com/4785303/82208753-fb66ee80-9903-11ea-8800-af0aa7a3c120.gif)
 
 This repository powers the following website where I keep track of all the streets I have walked and cycled around where I live: http://alvarop.me/keep-exploring/
 
