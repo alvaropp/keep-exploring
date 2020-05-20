@@ -50,14 +50,7 @@ def compute_segments_in_borough(all_points, borough_polygon):
     return routes
 
 
-def generate_map(route_path, output_path):
-    m = folium.Map(
-        location=[51.2412, -0.5744],
-        zoom_start=11,
-        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-        attr="""Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ""",
-    )
-
+def populate_map(m, route_path, output_path, out_name):
     # Add Guildford Borough
     borough_json = folium.GeoJson(
         "https://findthatpostcode.uk/areas/E07000209.geojson",
@@ -71,7 +64,9 @@ def generate_map(route_path, output_path):
     borough_json.add_to(m)
 
     borough_polygon = Polygon(
-        np.array(borough_json.data["features"][0]["geometry"]["coordinates"][0])[:, ::-1]
+        np.array(borough_json.data["features"][0]["geometry"]["coordinates"][0])[
+            :, ::-1
+        ]
     )
 
     # Add each route
@@ -83,12 +78,12 @@ def generate_map(route_path, output_path):
             folium.PolyLine(segment, color="black", weight=2).add_to(m)
 
     # Save and add heading to map
-    m.save(join(output_path, "index.html"))
-    update_html_style_and_title(output_path)
+    m.save(join(output_path, f"{out_name}.html"))
+    update_html_style_and_title(output_path, out_name)
 
 
-def update_html_style_and_title(path):
-    with open(join(path, "index.html"), "r") as f:
+def update_html_style_and_title(path, name):
+    with open(join(path, f"{name}.html"), "r") as f:
         soup = BeautifulSoup(f, "html.parser")
 
     new_style = soup.new_tag("style")
@@ -118,7 +113,20 @@ def update_html_style_and_title(path):
         file.write(str(soup))
 
 
+def generate_maps(route_path, output_path):
+    m_show = folium.Map(
+        location=[51.2412, -0.5744],
+        zoom_start=11,
+        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+        attr="""Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ""",
+    )
+    populate_map(m_show, route_path, output_path, "index")
+
+    m_info = folium.Map(location=[51.2412, -0.5744], zoom_start=11,)
+    populate_map(m_info, route_path, output_path, "index-info")
+
+
 if __name__ == "__main__":
     route_path = "../gpx/"
     output_path = "../"
-    generate_map(route_path, output_path)
+    generate_maps(route_path, output_path)
