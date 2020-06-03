@@ -109,7 +109,7 @@ def update_html_style_and_title(path, name):
     new_div.string = "Keep Exploring."
     soup.body.insert(0, new_div)
 
-    with open(join(path, "index.html"), "w") as file:
+    with open(join(path, f"{name}.html"), "w") as file:
         file.write(str(soup))
 
 
